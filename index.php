@@ -8,10 +8,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
     <!--Load initial randomized game-->
     <?php include($_SERVER['DOCUMENT_ROOT']."/initialrandomizer.php")?>
+    <?php include($_SERVER['DOCUMENT_ROOT']."/randomizer.php")?>
 </head>
 <button type="button" class="btn btn-cyan btn-lg btn-block">Home</button>
-
-<button type="button" class="btn btn-red btn-lg btn-block">Randomize!</button>
+<form name="form" method="POST" action="">
+<button type="submit" name="randomize" class="btn btn-red btn-lg btn-block">Randomize!</button>
+</form>
 <div class="container-fluid text-center">
     <div class="row">
             <div class="col-lg-12">

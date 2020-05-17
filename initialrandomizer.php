@@ -18,7 +18,9 @@ curl_close($curl);
 $numresults = count($jsonarr->results) - 1;
 $randomnumber = rand(0,$numresults);
 $GGresult = ($jsonarr->results[$randomnumber]);
+$totalresults = $jsonarr->count;
 
+#Game that displays on the page
 $Game = 
 [
   "id" => $GGresult->id,
