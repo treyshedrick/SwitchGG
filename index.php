@@ -8,24 +8,26 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
     <!--Load initial randomized game-->
     <?php include($_SERVER['DOCUMENT_ROOT']."/initialrandomizer.php")?>
-    <?php include($_SERVER['DOCUMENT_ROOT']."/randomizer.php")?>
 </head>
 <button type="button" class="btn btn-cyan btn-lg btn-block">Home</button>
-<form name="form" method="POST" action="">
-<button type="submit" name="randomize" class="btn btn-red btn-lg btn-block">Randomize!</button>
-</form>
+<button type="button" onClick="window.location.reload();" class="btn btn-red btn-lg btn-block">Randomize!</button>
 <div class="container-fluid text-center">
     <div class="row">
             <div class="col-lg-12">
-                <img src="<?php echo $Game[image];?>" class="img-fluid animated bounceInLeft slower">
+                <i class="fas fa-spinner fa-spin fa-5x" id="spinner"></i>
             </div>
     </div>
-    <div class="row animated bounceIn delay-1s">
+    <div class="row">
+            <div class="col-lg-12">
+                <img src="<?php echo $Game[image];?>" class="img-fluid animated bounceInLeft delay-2s">
+            </div>
+    </div>
+    <div class="row animated bounceIn delay-3s">
         <div class="col-sm-12">
             <h2><?php echo $Game[name];?></h2>
         </div>
     </div>
-    <div class="row animated bounceIn delay-1s">
+    <div class="row animated bounceIn delay-3s">
         <div class="col-sm-4">
             <h3>Release Date</h3>
             <h4><?php echo $Game[releaseDate];?></h3>
@@ -48,4 +50,5 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+    <script type="text/javascript" src="/spinner.js"></script>
 </html>

@@ -8,3 +8,8 @@ form
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 }
+.fa-spin
+{
+    animation-duration: 1s;
+    margin-top: 100px;
+}

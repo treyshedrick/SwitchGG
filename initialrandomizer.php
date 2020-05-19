@@ -1,8 +1,10 @@
 <?php
+#Top 500 switch games
+$pagenum = rand(1,25);
 #Initial API call that loads on page. Top rated Switch Games
 $curl = curl_init();
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://api.rawg.io/api/games?ordering=-rating&platforms=7",
+  CURLOPT_URL => "https://api.rawg.io/api/games?&page=".$pagenum."&ordering=-rating&platforms=7",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
