@@ -1,15 +1,24 @@
+.container-fluid
+{
+    padding: 0 !important;
+}
 img
 {
     max-width: 60vh;
     max-height: 60vh;
+    border: 1px solid cyan !important;
 }
 form
 {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .fa-spin
 {
-    animation-duration: 1s;
+    animation-duration: 1.5s !important;
     margin-top: 100px;
+}
+.fa-spinner
+{
+    color: cyan;
 }

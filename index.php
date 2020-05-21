@@ -9,9 +9,9 @@
     <!--Load initial randomized game-->
     <?php include($_SERVER['DOCUMENT_ROOT']."/initialrandomizer.php")?>
 </head>
+<div class="container-fluid text-center">
 <button type="button" class="btn btn-cyan btn-lg btn-block">Home</button>
 <button type="button" onClick="window.location.reload();" class="btn btn-red btn-lg btn-block">Randomize!</button>
-<div class="container-fluid text-center">
     <div class="row">
             <div class="col-lg-12">
                 <i class="fas fa-spinner fa-spin fa-5x" id="spinner"></i>
