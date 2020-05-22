@@ -36,4 +36,17 @@ if($Game[metacritic] == NULL)
 {
   $Game[metacritic] = "Not Available";
 }
+
+#Total genres. Loop through to capture all genres in a single string and assign to $Game array.
+$ggenres = "";
+  for($x = 0; $x < count($GGresult->genres); $x++)
+    {
+      if($x == (count($GGresult->genres)-1))
+      {
+        $ggenres .= $GGresult->genres[$x]->name;
+      }
+      else
+        $ggenres .= $GGresult->genres[$x]->name." / ";
+    }
+$Game["genres"] = $ggenres;
 ?>

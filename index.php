@@ -28,6 +28,12 @@
         </div>
     </div>
     <div class="row animated bounceIn delay-3s">
+        <div class="col-lg-12">
+            <h5>Genres</h5>
+            <h6><?php echo $Game[genres];?></h6>
+        </div>
+    </div>
+    <div class="row animated bounceIn delay-3s">
         <div class="col-sm-4">
             <h3>Release Date</h3>
             <h4><?php echo $Game[releaseDate];?></h3>
