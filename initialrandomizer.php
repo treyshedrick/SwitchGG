@@ -49,4 +49,9 @@ $ggenres = "";
         $ggenres .= $GGresult->genres[$x]->name." / ";
     }
 $Game["genres"] = $ggenres;
+$Genrenaming = "Genre";
+    if(count($GGresult->genres) > 1)
+    {
+      $Genrenaming = "Genres";
+    }
 ?>

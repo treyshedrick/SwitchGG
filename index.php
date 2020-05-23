@@ -29,7 +29,7 @@
     </div>
     <div class="row animated bounceIn delay-3s">
         <div class="col-lg-12">
-            <h5>Genres</h5>
+            <h5><?php echo $Genrenaming ?></h5>
             <h6><?php echo $Game[genres];?></h6>
         </div>
     </div>
