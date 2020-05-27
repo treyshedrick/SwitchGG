@@ -5,7 +5,7 @@ $gameid = $_POST["gameid"];
 #curl game information
 $curl = curl_init();
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://api.rawg.io/api/games/".$gameid,
+  CURLOPT_URL => "https://api.rawg.io/api/games/22509",#.$gameid,
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
@@ -27,11 +27,30 @@ $GameInfo =
     "image" => $jsongameinfo->background_image_additional,
     "reviewsurl" => $jsongameinfo->metacritic_url,
     "esrbrating" => $jsongameinfo->esrb_rating->name,
+    "hdclip" => $jsongameinfo->clip->clips->full,
 ];
 
 #ESRB rating display Not Available if null
 if($jsongameinfo->esrb_rating == NULL)
 {
   $GameInfo["esrbrating"] = "Not Available";
+}
+
+#Game developers
+for($devs=0; $devs<count($jsongameinfo->developers); $devs++)
+{
+  $gamedevs .= $jsongameinfo->developers[$devs]->name."<br>";
+}
+$GameInfo["developers"] = $gamedevs;
+
+#Nintendo Store Url
+$stores = $jsongameinfo->stores;
+for($ns=0; $ns < count($jsongameinfo->stores); $ns++)
+{
+  $sname = $stores[$ns]->store->name;
+  if($sname == "Nintendo Store")
+  {
+    $GameInfo["nintendostoreurl"] = $stores[$ns]->url;
+  }
 }
 ?>
