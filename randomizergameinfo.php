@@ -5,7 +5,7 @@ $gameid = $_POST["gameid"];
 #curl game information
 $curl = curl_init();
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://api.rawg.io/api/games/22509",#.$gameid,
+  CURLOPT_URL => "https://api.rawg.io/api/games/".$gameid,
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
