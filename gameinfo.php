@@ -22,10 +22,12 @@
         </div>
     </div>
     <div class="row animated bounceInLeft delay-2s">
-            <div class="col-xl-6">
-                <img src="<?php echo $GameInfo[image];?>" class="img-fluid">
+            <div class="col-xl-12">
+            <?php videoOrPicture($GameInfo["hdclip"], $GameInfo["image"]);?>
             </div>
-            <div class="col-xl-6">
+    </div>
+    <div class="row animated bounceInLeft delay-2s">
+            <div class="col-xl-12">
                 <h3>Game Description</h3>
                 <div class="small"><?php echo $GameInfo[description];?></div>
             </div>

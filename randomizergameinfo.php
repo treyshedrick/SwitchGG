@@ -53,4 +53,20 @@ for($ns=0; $ns < count($jsongameinfo->stores); $ns++)
     $GameInfo["nintendostoreurl"] = $stores[$ns]->url;
   }
 }
+
+#Display video or secondary picture
+function videoOrPicture($clip, $img)
+{
+
+  if($clip == NULL)
+  {
+    echo "<img src=\"".$img."\" class=\"img-fluid\">";
+  }
+  else
+  {
+    echo "<video class=\"video-fluid z-depth-1\" autoplay playsinline loop controls muted>
+            <source src=\"".$clip."\" type=\"video/mp4\">
+          </video>";
+  }
+}
 ?>
