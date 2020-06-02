@@ -69,4 +69,15 @@ function videoOrPicture($clip, $img)
           </video>";
   }
 }
+
+#Show metacritic url or not
+function metacriticUrl($link)
+{
+  if($link != NULL)
+  {
+    echo "<div class=\"col-lg-12\">
+            <a href=\"".$link."\" class=\"btn btn-cyan btn-block\" target=\"_blank\">Metacritic Reviews</a>
+          </div>";
+  }
+}
 ?>

@@ -38,6 +38,18 @@
             <h6><?php echo $GameInfo[esrbrating];?></h6>
         </div>
     </div>
+    <div class="row animated bounceIn delay-3s">
+        <div class="col-lg-12">
+            <h5>Developers</h5>
+            <h6><?php echo $GameInfo[developers];?></h6>
+        </div>
+    </div>
+    <div class="row animated bounceIn delay-3s">
+        <?php metacriticUrl($GameInfo["reviewsurl"]);?>
+        <div class="col-lg-12">
+            <a href="<?php echo $GameInfo["nintendostoreurl"]?>" class="btn btn-cyan btn-block" target="_blank">Purchase at Nintendo Store</a>
+        </div>
+    </div> 
 <footer>
     Data provided by <a href="https://rawg.io">Rawg.IO</a>
 </footer>
