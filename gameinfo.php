@@ -21,30 +21,33 @@
             <h2><?php echo $GameInfo[name];?></h2>
         </div>
     </div>
+    <div class="row animated bounceIn delay-3s">
+        <div class="col-sm-12">
+            <h6>ESRB Rating: <?php echo $GameInfo[esrbrating];?></h6>
+        </div>
+    </div>
     <div class="row animated bounceInLeft delay-2s">
             <div class="col-xl-12">
             <?php videoOrPicture($GameInfo["hdclip"], $GameInfo["image"]);?>
             </div>
     </div>
     <div class="row animated bounceInLeft delay-2s">
-            <div class="col-xl-12">
-                <h3>Game Description</h3>
-                <div class="small"><?php echo $GameInfo[description];?></div>
+        <div class="col-xl-12">
+            <button class="btn btn-red btn-block" type="button" data-toggle="collapse" data-target="#description" aria-expanded="false" aria-controls="description">Game Description</button>
+            <div class="collapse" id="description">
+                <div class="small infotab"><?php echo $GameInfo[description];?></div>
             </div>
-    </div>
-    <div class="row animated bounceIn delay-3s">
-        <div class="col-lg-12">
-            <h5>ESRB Rating</h5>
-            <h6><?php echo $GameInfo[esrbrating];?></h6>
         </div>
     </div>
-    <div class="row animated bounceIn delay-3s">
-        <div class="col-lg-12">
-            <h5>Developers</h5>
-            <h6><?php echo $GameInfo[developers];?></h6>
+    <div class="row animated bounceIn delay-2s">
+        <div class="col-sm-12">
+            <button class="btn btn-outline-black btn-block waves-effect" type="button" data-toggle="collapse" data-target="#developers" aria-expanded="false" aria-controls="description">Developers</button>
+            <div class="collapse" id="developers">
+                <h6 class="infotab"><?php echo $GameInfo[developers];?></h6>
+             </div>
         </div>
     </div>
-    <div class="row animated bounceIn delay-3s">
+    <div class="row animated bounceIn delay-2s">
         <?php metacriticUrl($GameInfo["reviewsurl"]);?>
         <div class="col-lg-12">
             <a href="<?php echo $GameInfo["nintendostoreurl"]?>" class="btn btn-cyan btn-block" target="_blank">Purchase at Nintendo Store</a>
