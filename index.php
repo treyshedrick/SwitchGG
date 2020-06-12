@@ -10,7 +10,7 @@
     <?php include($_SERVER['DOCUMENT_ROOT']."/initialrandomizer.php")?>
 </head>
 <div class="container-fluid text-center">
-<button type="button" class="btn btn-cyan btn-lg btn-block">Home</button>
+<a href="https://tshedrick.com" class="btn btn-cyan btn-lg btn-block">Home</a>
 <button type="button" onClick="window.location.reload();" class="btn btn-red btn-lg btn-block">Randomize!</button>
     <div class="row">
             <div class="col-lg-12">
