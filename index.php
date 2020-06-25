@@ -19,36 +19,36 @@
     </div>
     <div class="row">
             <div class="col-lg-12">
-                <img src="<?php echo $Game[image];?>" class="img-fluid animated bounceInLeft delay-2s">
+                <img src="<?= $Game[image];?>" class="img-fluid animated bounceInLeft delay-2s">
             </div>
     </div>
     <div class="row animated bounceIn delay-3s">
         <div class="col-sm-12">
-            <h2><?php echo $Game[name];?></h2>
+            <h2><?= $Game[name];?></h2>
         </div>
     </div>
     <div class="row animated bounceIn delay-3s">
         <div class="col-lg-12">
-            <h5><?php echo $Genrenaming ?></h5>
-            <h6><?php echo $Game[genres];?></h6>
+            <h5><?= $Genrenaming ?></h5>
+            <h6><?= $Game[genres];?></h6>
         </div>
     </div>
     <div class="row animated bounceIn delay-3s">
         <div class="col-sm-4">
             <h3>Release Date</h3>
-            <h4><?php echo $Game[releaseDate];?></h3>
+            <h4><?= $Game[releaseDate];?></h3>
         </div>
         <div class="col-sm-4">
             <h3>Metacritic Rating</h3>
-            <h4><?php echo $Game[metacritic];?></h4>
+            <h4><?= $Game[metacritic];?></h4>
         </div>
         <div class="col-sm-4">
             <h3>Rawg Rating</h3>
-            <h4><?php echo $Game[rating];?></h4>
+            <h4><?= $Game[rating];?></h4>
         </div>
     </div>
 <form method="POST" action="/gameinfo.php">
-    <button type="submit" name="gameid" value="<?php echo $Game[id]?>" class="btn btn-cyan btn-lg">More Info</button>
+    <button type="submit" name="gameid" value="<?= $Game[id]?>" class="btn btn-cyan btn-lg">More Info</button>
 </form>
 <footer>
     Data provided by <a href="https://rawg.io">Rawg.IO</a>
