@@ -18,12 +18,12 @@
     </div>
     <div class="row animated bounceIn delay-3s">
         <div class="col-sm-12">
-            <h2><?= $GameInfo[name];?></h2>
+            <h2><?= $GameInfo["name"];?></h2>
         </div>
     </div>
     <div class="row animated bounceIn delay-3s">
         <div class="col-sm-12">
-            <h6>ESRB Rating: <?= $GameInfo[esrbrating];?></h6>
+            <h6>ESRB Rating: <?= $GameInfo["esrbrating"];?></h6>
         </div>
     </div>
     <div class="row animated bounceInLeft delay-2s">
@@ -35,7 +35,7 @@
         <div class="col-xl-12">
             <button class="btn btn-red btn-block" type="button" data-toggle="collapse" data-target="#description" aria-expanded="false" aria-controls="description">Game Description</button>
             <div class="collapse" id="description">
-                <div class="small infotab"><?= $GameInfo[description];?></div>
+                <div class="small infotab"><?= $GameInfo["description"];?></div>
             </div>
         </div>
     </div>
@@ -43,7 +43,7 @@
         <div class="col-sm-12">
             <button class="btn btn-outline-black btn-block waves-effect" type="button" data-toggle="collapse" data-target="#developers" aria-expanded="false" aria-controls="description">Developers</button>
             <div class="collapse" id="developers">
-                <h6 class="infotab"><?= $GameInfo[developers];?></h6>
+                <h6 class="infotab"><?= $GameInfo["developers"];?></h6>
              </div>
         </div>
     </div>

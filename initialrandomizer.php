@@ -32,9 +32,9 @@ $Game =
   "rating" => $GGresult->rating,
   "image" => $GGresult->background_image,
 ];
-if($Game[metacritic] == NULL)
+if($Game["metacritic"] == NULL)
 {
-  $Game[metacritic] = "Not Available";
+  $Game["metacritic"] = "Not Available";
 }
 
 #Total genres. Loop through to capture all genres in a single string and assign to $Game array.
