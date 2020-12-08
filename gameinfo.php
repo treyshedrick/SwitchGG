@@ -9,7 +9,7 @@
     <!--Include game information-->
     <?php include($_SERVER['DOCUMENT_ROOT']."/randomizergameinfo.php")?>
 </head>
-<div class="container-fluid text-center">
+<div class="container-fluid p-0 text-center">
 <button type="button" class="btn btn-cyan btn-lg btn-block" onClick="location.href='http://switchgg.com' ">Back To Randomizer</button>
     <div class="row">
             <div class="col-lg-12">

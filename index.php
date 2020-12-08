@@ -9,7 +9,8 @@
     <!--Load initial randomized game-->
     <?php include($_SERVER['DOCUMENT_ROOT']."/initialrandomizer.php")?>
 </head>
-<div class="container-fluid text-center">
+<body>
+<div class="container-fluid p-0 text-center">
 <a href="https://tshedrick.com" class="btn btn-cyan btn-lg btn-block">Home</a>
 <button type="button" onClick="window.location.reload();" class="btn btn-red btn-lg btn-block">Randomize!</button>
     <div class="row">
@@ -54,6 +55,7 @@
     Data provided by <a href="https://rawg.io">Rawg.IO</a>
 </footer>
 </div>
+</body>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
