@@ -26,3 +26,9 @@ form
 {
     margin: 2% 5%;
 }
+html, .container-fluid
+{
+    background-color: #292929;
+    color: white;
+    height: 100%;
+}
