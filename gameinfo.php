@@ -41,7 +41,7 @@
     </div>
     <div class="row animated bounceIn delay-2s">
         <div class="col-sm-12">
-            <button class="btn btn-outline-black btn-block waves-effect" type="button" data-toggle="collapse" data-target="#developers" aria-expanded="false" aria-controls="description">Developers</button>
+            <button class="btn btn-outline-white btn-block waves-effect" type="button" data-toggle="collapse" data-target="#developers" aria-expanded="false" aria-controls="description">Developers</button>
             <div class="collapse" id="developers">
                 <h6 class="infotab"><?= $GameInfo["developers"];?></h6>
              </div>
