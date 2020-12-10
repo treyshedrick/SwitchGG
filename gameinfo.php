@@ -53,7 +53,7 @@
             <a href="<?=$GameInfo["nintendostoreurl"]?>" class="btn btn-cyan btn-block" target="_blank">Purchase at Nintendo Store</a>
         </div>
     </div> 
-<footer>
+<footer class="animated zoomIn delay-2s">
     Data provided by <a href="https://rawg.io">Rawg.IO</a>
 </footer>
 </div>

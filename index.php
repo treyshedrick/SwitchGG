@@ -48,10 +48,10 @@
             <h4><?= $Game["rating"];?></h4>
         </div>
     </div>
-<form method="POST" action="/gameinfo.php">
+<form method="POST" action="/gameinfo.php" class="animated zoomIn delay-3s">
     <button type="submit" name="gameid" value="<?= $Game["id"]?>" class="btn btn-cyan btn-lg">More Info</button>
 </form>
-<footer>
+<footer class="animated zoomIn delay-3s">
     Data provided by <a href="https://rawg.io">Rawg.IO</a>
 </footer>
 </div>
