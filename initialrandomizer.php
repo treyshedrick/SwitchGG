@@ -32,26 +32,22 @@ $Game =
   "rating" => $GGresult->rating,
   "image" => $GGresult->background_image,
 ];
-if($Game["metacritic"] == NULL)
-{
+if($Game["metacritic"] == NULL){
   $Game["metacritic"] = "Not Available";
 }
 
 #Total genres. Loop through to capture all genres in a single string and assign to $Game array.
 $ggenres = "";
-  for($x = 0; $x < count($GGresult->genres); $x++)
-    {
-      if($x == (count($GGresult->genres)-1))
-      {
+  for($x = 0; $x < count($GGresult->genres); $x++){
+      if($x == (count($GGresult->genres)-1)){
         $ggenres .= $GGresult->genres[$x]->name;
       }
       else
         $ggenres .= $GGresult->genres[$x]->name." / ";
-    }
+  }
 $Game["genres"] = $ggenres;
 $Genrenaming = "Genre";
-    if(count($GGresult->genres) > 1)
-    {
+    if(count($GGresult->genres) > 1){
       $Genrenaming = "Genres";
     }
 ?>

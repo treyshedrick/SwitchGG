@@ -31,39 +31,33 @@ $GameInfo =
 ];
 
 #ESRB rating display Not Available if null
-if($jsongameinfo->esrb_rating == NULL)
-{
+if($jsongameinfo->esrb_rating == NULL){
   $GameInfo["esrbrating"] = "Not Available";
 }
 
 #Game developers
-for($devs=0; $devs<count($jsongameinfo->developers); $devs++)
-{
+for($devs=0; $devs<count($jsongameinfo->developers); $devs++){
   $gamedevs .= $jsongameinfo->developers[$devs]->name."<br>";
 }
 $GameInfo["developers"] = $gamedevs;
 
 #Nintendo Store Url
 $stores = $jsongameinfo->stores;
-for($ns=0; $ns < count($jsongameinfo->stores); $ns++)
-{
+for($ns=0; $ns < count($jsongameinfo->stores); $ns++){
   $sname = $stores[$ns]->store->name;
-  if($sname == "Nintendo Store")
-  {
+
+  if($sname == "Nintendo Store"){
     $GameInfo["nintendostoreurl"] = $stores[$ns]->url;
   }
 }
 
 #Display video or secondary picture
-function videoOrPicture($clip, $img)
-{
+function videoOrPicture($clip, $img){
 
-  if($clip == NULL)
-  {
+  if($clip == NULL){
     echo "<img src=\"".$img."\" class=\"img-fluid\">";
   }
-  else
-  {
+  else{
     echo "<video class=\"video-fluid z-depth-1\" autoplay playsinline loop controls muted>
             <source src=\"".$clip."\" type=\"video/mp4\">
           </video>";
@@ -71,10 +65,8 @@ function videoOrPicture($clip, $img)
 }
 
 #Show metacritic url or not
-function metacriticUrl($link)
-{
-  if($link != NULL)
-  {
+function metacriticUrl($link){
+  if($link != NULL){
     echo "<div class=\"col-lg-12\">
             <a href=\"".$link."\" class=\"btn btn-red btn-block\" target=\"_blank\">Metacritic Reviews</a>
           </div>";
