@@ -13,5 +13,5 @@
 
 <p align="center">
     <a href="http://switchgg.com">Demo</a><br>
-    <img src="https://media.giphy.com/media/bLfVcOBkS531uL5NlJ/giphy.gif" alt="animated">
+    <img src="https://media.giphy.com/media/bLfVcOBkS531uL5NlJ/giphy-downsized.gif" alt="animated">
 <p>
