@@ -1,16 +1,16 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/switchgg/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
     <!--Include game information-->
-    <?php include($_SERVER['DOCUMENT_ROOT']."/randomizergameinfo.php")?>
+    <?php include($_SERVER['DOCUMENT_ROOT']."/switchgg/randomizergameinfo.php")?>
 </head>
 <div class="container-fluid p-0 text-center">
-<button type="button" class="btn btn-cyan btn-lg btn-block" onClick="location.href='http://switchgg.com' ">Back To Randomizer</button>
+<button type="button" class="btn btn-cyan btn-lg btn-block" onClick="location.href='http://tshedrick.com/switchgg/index.php' ">Back To Randomizer</button>
     <div class="row">
             <div class="col-lg-12">
                 <i class="fas fa-spinner fa-spin fa-5x" id="spinner"></i>
@@ -61,5 +61,5 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
-    <script type="text/javascript" src="/spinner.js"></script>
+    <script type="text/javascript" src="/switchgg/spinner.js"></script>
 </html>
