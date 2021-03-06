@@ -12,6 +12,6 @@
 ###### Data provided by rawg.io
 
 <p align="center">
-    <a href="http://switchgg.com">Demo</a><br>
+    <a href="https://tshedrick.com/switchgg/index.php">Demo</a><br>
     <img src="https://media.giphy.com/media/bLfVcOBkS531uL5NlJ/giphy-downsized.gif" alt="animated">
 <p>
