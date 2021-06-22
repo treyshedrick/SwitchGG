@@ -1,7 +1,7 @@
 <?php
+include("environment.php");
 #Top 500 switch games
 $pagenum = rand(1,25);
-$apikey = $_ENV["API_KEY"];
 #Initial API call that loads on page. Top rated Switch Games
 $curl = curl_init();
 curl_setopt_array($curl, array(

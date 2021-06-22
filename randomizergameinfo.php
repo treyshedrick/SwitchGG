@@ -1,7 +1,7 @@
 <?php
+include("environment.php");
 #gameid from index.php
 $gameid = $_POST["gameid"];
-$apikey = $_ENV["API_KEY"];
 
 #curl game information
 $curl = curl_init();
