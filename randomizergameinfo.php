@@ -1,11 +1,12 @@
 <?php
 #gameid from index.php
 $gameid = $_POST["gameid"];
+$apikey = $_ENV["API_KEY"];
 
 #curl game information
 $curl = curl_init();
 curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://api.rawg.io/api/games/".$gameid,
+  CURLOPT_URL => "https://api.rawg.io/api/games/".$gameid."&key=".$apikey,
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_ENCODING => "",
   CURLOPT_MAXREDIRS => 10,
